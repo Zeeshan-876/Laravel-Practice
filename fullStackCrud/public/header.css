@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-div {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.h2-heading {
+    margin-top: 10px;
+    color: white;
+}
+.list-items > a {
+    color: white;
+    text-decoration: none;
+}
+.list-items {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 0 10px 0 10px;
+}
+@media screen and (max-width: 600px) {
+    .list-items {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .h2-heading {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}

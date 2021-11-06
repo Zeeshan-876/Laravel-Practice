@@ -1,0 +1,22 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\studentController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('student-form',[studentController::class,'create']);
+Route::post('store-StdRecord',[studentController::class,'store']);
+Route::get('/',[studentController::class,'index']);
+Route::get('delete_stdRecord/{id}',[studentController::class,'destroy']);
+Route::get('edit_stdRecord/{id}',[studentController::class,'edit']);
+Route::put('edit_stdRecord/update_stdRecord/{id}',[studentController::class,'update']);
